@@ -15,6 +15,7 @@ Group:          System/Libraries
 License:        LGPL-2.1-only
 URL:            https://github.com/Aylur/astal
 Source0:        %{url}/archive/%{astal_commit}/%{name}-%{astal_shortcommit}.tar.gz
+Source1:        https://github.com/LukashonakV/cava/archive/0.10.3.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  meson
@@ -35,10 +36,13 @@ BuildRequires:  python3
 BuildRequires:  vala
 BuildRequires:  valadoc
 BuildRequires:	pkgconfig(libnma)
-BuildRequires:	pkgconfig(cava)
 BuildRequires:	pkgconfig(wireplumber-0.5)
+BuildRequires:  iniparser-devel
+BuildRequires:  pkgconfig(fftw3)
+BuildRequires:  pkgconfig(cava)
 
 Requires: cava
+Requires: lib64cava
 
 %description
 %{summary}.
@@ -63,6 +67,7 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %autosetup -n astal-%{astal_commit} -p1
+tar -xf %{SOURCE1} -C lib/cava/subprojects
 
 %build
 cd lib
