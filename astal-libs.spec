@@ -9,7 +9,7 @@
 
 Name:           astal-libs
 Version:        1~%{bumpver}.git%{astal_shortcommit}
-Release:        3
+Release:        4
 Summary:        Astal libraries
 Group:          System/Libraries
 License:        LGPL-2.1-only
@@ -41,6 +41,7 @@ BuildRequires:  iniparser-devel
 BuildRequires:  pkgconfig(fftw3)
 BuildRequires:  pkgconfig(cava)
 BuildRequires:  typelib(NM)
+BuildRequires:  typelib(GTop)
 
 Requires: cava
 Requires: lib64cava
