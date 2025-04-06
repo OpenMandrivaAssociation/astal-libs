@@ -52,6 +52,7 @@ Requires: lib64cava
 Summary:    %{summary}
 Group:      System/Libraries
 Provides:   %{libname} = %{EVRD}
+Provides: astal-libs
 
 %global __requires_exclude ^%{_libdir}
 %description -n %{libname}
