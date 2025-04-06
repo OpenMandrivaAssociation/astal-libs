@@ -39,6 +39,7 @@ BuildRequires:	pkgconfig(libnma)
 BuildRequires:	pkgconfig(wireplumber-0.5)
 BuildRequires:  iniparser-devel
 BuildRequires:  pkgconfig(fftw3)
+BuildRequires:  pkgconfig(cava)
 
 Requires: cava
 
