@@ -41,6 +41,7 @@ BuildRequires:  iniparser-devel
 BuildRequires:  pkgconfig(fftw3)
 BuildRequires:  pkgconfig(cava)
 BuildRequires:  typelib(NM)
+BuildRequires:  typelib(GTop)
 
 Requires: cava
 Requires: lib64cava
