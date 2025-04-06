@@ -8,7 +8,7 @@
 %define devname %mklibname astal-libs -d
 
 Name:           astal-libs
-Version:        1~%{bumpver}.git%{astal_shortcommit}
+Version:        2~%{bumpver}.git%{astal_shortcommit}
 Release:        1
 Summary:        Astal libraries
 Group:          System/Libraries
