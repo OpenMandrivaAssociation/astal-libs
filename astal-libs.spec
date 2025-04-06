@@ -37,6 +37,7 @@ BuildRequires:  vala
 BuildRequires:  valadoc
 BuildRequires:	pkgconfig(libnma)
 BuildRequires:	pkgconfig(wireplumber-0.5)
+BuildRequires:  iniparser-devel
 
 Requires: cava
 
