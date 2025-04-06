@@ -21,6 +21,7 @@ BuildRequires:  gcc
 BuildRequires:  meson
 BuildRequires:  pkgconfig(appmenu-glib-translator)
 BuildRequires:  pkgconfig(astal-3.0)
+BuildRequires:  pkgconfig(astal-4.0)
 BuildRequires:  pkgconfig(astal-io-0.1)
 BuildRequires:  pkgconfig(dbusmenu-gtk3-0.4)
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
