@@ -40,7 +40,7 @@ BuildRequires:	pkgconfig(wireplumber-0.5)
 BuildRequires:  iniparser-devel
 BuildRequires:  pkgconfig(fftw3)
 BuildRequires:  pkgconfig(cava)
-BuildRequires:  typelib(NMA)
+BuildRequires:  typelib(NM)
 
 Requires: cava
 Requires: lib64cava
