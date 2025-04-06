@@ -8,8 +8,8 @@
 %define devname %mklibname astal-libs -d
 
 Name:           astal-libs
-Version:        2~%{bumpver}.git%{astal_shortcommit}
-Release:        1
+Version:        1~%{bumpver}.git%{astal_shortcommit}
+Release:        2
 Summary:        Astal libraries
 Group:          System/Libraries
 License:        LGPL-2.1-only
@@ -40,6 +40,7 @@ BuildRequires:	pkgconfig(wireplumber-0.5)
 BuildRequires:  iniparser-devel
 BuildRequires:  pkgconfig(fftw3)
 BuildRequires:  pkgconfig(cava)
+BuildRequires:  typelib(NMA)
 
 Requires: cava
 Requires: lib64cava
