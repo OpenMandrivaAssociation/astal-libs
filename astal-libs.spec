@@ -1,6 +1,7 @@
-%global astal_commit 69efb4c91e590adcb5a3d8938454f987982e3891
+%global astal_commit 20bd8318e4136fbd3d4eb2d64dbabc3acbc915dd
 %global astal_shortcommit %(c=%{astal_commit}; echo ${c:0:7})
 %global bumpver 1
+%global pkgname astal
 
 %global _lto_cflags %{nil}
 
@@ -9,13 +10,13 @@
 
 Name:           astal-libs
 Version:        1~%{bumpver}.git%{astal_shortcommit}
-Release:        4
+Release:        1
 Summary:        Astal libraries
 Group:          System/Libraries
 License:        LGPL-2.1-only
 URL:            https://github.com/Aylur/astal
-Source0:        %{url}/archive/%{astal_commit}/%{name}-%{astal_shortcommit}.tar.gz
-Source1:        https://github.com/LukashonakV/cava/archive/0.10.3.tar.gz
+Source0:        https://github.com/aylur/astal/archive/%{astal_commit}/%{pkgname}-%{astal_shortcommit}.tar.gz
+Source1:        https://github.com/LukashonakV/cava/archive/0.10.4.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  meson
