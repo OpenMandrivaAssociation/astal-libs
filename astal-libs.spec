@@ -1,6 +1,6 @@
 %global astal_commit 20bd8318e4136fbd3d4eb2d64dbabc3acbc915dd
 %global astal_shortcommit %(c=%{astal_commit}; echo ${c:0:7})
-%global bumpver 1
+%global bumpver 2
 %global pkgname astal
 
 %global _lto_cflags %{nil}
