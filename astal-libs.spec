@@ -1,6 +1,6 @@
-%global astal_commit 20bd8318e4136fbd3d4eb2d64dbabc3acbc915dd
+%global astal_commit 6976faba892be4c79d2b8b42710203b319278d7f
 %global astal_shortcommit %(c=%{astal_commit}; echo ${c:0:7})
-%global bumpver 2
+%global bumpver 3
 %global pkgname astal
 
 %global _lto_cflags %{nil}
@@ -16,7 +16,7 @@ Group:          System/Libraries
 License:        LGPL-2.1-only
 URL:            https://github.com/Aylur/astal
 Source0:        https://github.com/aylur/astal/archive/%{astal_commit}/%{pkgname}-%{astal_shortcommit}.tar.gz
-Source1:        https://github.com/LukashonakV/cava/archive/0.10.4.tar.gz
+Source1:        https://github.com/LukashonakV/cava/archive/0.10.6.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  meson
@@ -33,6 +33,7 @@ BuildRequires:  pkgconfig(gobject-2.0)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(pam)
+BuildRequires:  cava
 BuildRequires:  python3
 BuildRequires:  vala
 BuildRequires:  valadoc
@@ -135,6 +136,7 @@ rm -rf %{buildroot}%{_libdir}/pkgconfig/cava.pc
 %{_libdir}/libastal-river.so.0{,.*}
 %{_libdir}/libastal-tray.so.0{,.*}
 %{_libdir}/libastal-wireplumber.so.0{,.*}
+%{_datadir}/glib-2.0/schemas/io.astal.notifd.gschema.xml
 
 %files -n %{devname}
 %{_datadir}/gir-1.0/Astal*-0.1.gir
